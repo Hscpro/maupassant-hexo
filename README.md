@@ -190,7 +190,7 @@ All kinds of contributions (enhancements, new features, documentation & code imp
 Looking forward to your pull request.
 
 ## Acknowledgements
-Thanks for all the [contributors](https://github.com/tufu9441/maupassant-hexo/graphs/contributors) of this theme.
+Thank [JamesPan](http://blog.jamespan.me) for his help to improve this theme
 .
 ## Maupassant on other platforms:
 + Typecho：https://github.com/pagecho/maupassant/
