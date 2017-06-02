@@ -15,6 +15,23 @@ if theme.duoshuo
             || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
 
+if theme.isso
+  script(
+    data-isso='//#{theme.isso}/' 
+    data-isso-css='true'
+    data-isso-lang='zh'
+    data-isso-reply-to-self='true'
+    data-isso-require-author='true'
+    data-isso-require-email='true'
+    data-isso-max-comments-top='6'
+    data-isso-max-comments-nested='3'
+    data-isso-reveal-on-click='3'
+    data-isso-avatar='true'
+    data-isso-avatar-bg='#f0f0f0'
+    data-isso-avatar-fg='#c5c5c5'
+    data-isso-vote='true'
+    src='//#{theme.isso}/js/embed.min.js')
+
 if theme.tinysou
   script.
     var option = {

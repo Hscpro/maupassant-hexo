@@ -3,7 +3,7 @@ extends base
 
 block title
   if config.subtitle
-    title= config.title + ' | ' + config.subtitle
+    title= config.title + ' ' + config.subtitle
   else
     title= config.title
 block content
@@ -19,6 +19,8 @@ block content
         a.ds-thread-count(data-thread-key=post.path, href=url_for(post.path) + '#comments')
       if theme.disqus
         a.disqus-comment-count(data-disqus-identifier=post.path, href=url_for(post.path) + '#disqus_thread')
+      if theme.isso
+        a.ds-thread-count(href=url_for(post.path) + '#isso-thread')
       if theme.gentie
         a.ds-thread-count(class='cloud-tie-join-count', href=url_for(post.path) + '#comments')
           span.join-count(lang='join-count' style='margin: 0 3px 0 1px;' data-url='#{config.url}#{url_for(post.path)}') 0
