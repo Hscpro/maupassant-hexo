@@ -50,4 +50,4 @@ if theme.gentie
 
 if theme.isso
   link(rel='stylesheet', type='text/css', href=url_for(theme.css) + '/isso.css' + '?v=' + theme.version)
-  section(id='isso-thread').Comments
+  section(data-title=page.title id='isso-thread').Comments

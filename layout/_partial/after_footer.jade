@@ -78,6 +78,17 @@ if theme.baidu_analytics
       s.parentNode.insertBefore(hm, s);
       })();
 
+if theme.cnzz_analytics
+  div(style='display:none')
+    script(type="text/JavaScript").
+      var cnzz_s_tag = document.createElement('script');
+      cnzz_s_tag.type = 'text/javascript';
+      cnzz_s_tag.async = true;
+      cnzz_s_tag.charset = 'utf-8';
+      cnzz_s_tag.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//w.cnzz.com/c.php?id=#{theme.cnzz_analytics}&async=1';
+      var root_s = document.getElementsByTagName('script')[0];
+      root_s.parentNode.insertBefore(cnzz_s_tag, root_s);
+
 if page.mathjax
   include mathjax
 
